@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vlad Korzh</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 3em;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vlad Korzh | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hi, I'm Vlad Korzh</h1>
-  <p>Welcome to my personal site and research project hub.</p>
-  <p>More coming soon...</p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="log.html">CIPQ Log</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hi, I'm Vlad Korzh</h1>
+      <p>Student | Researcher | Data Enthusiast</p>
+      <a href="projects.html" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="highlight">
+      <h2>Featured Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>CIPQ Fuel Prediction Model</h3>
+          <p>Using machine learning to optimize diesel usage in mining logistics.</p>
+          <a href="projects.html#cipq">Read More →</a>
+        </div>
+        <div class="project-card">
+          <h3>Personal Website</h3>
+          <p>This site you're on — hand-coded with HTML/CSS and hosted on GitHub Pages.</p>
+          <a href="projects.html#website">See Code →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vlad Korzh. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
