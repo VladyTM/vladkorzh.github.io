@@ -251,3 +251,68 @@
     color: #333;
     line-height: 1.7;
   }
+
+  /* ------------------------------------
+   Projects Page (projects.html)
+------------------------------------- */
+
+.projects-page {
+    padding: 3rem 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .projects-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .category-title {
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.4rem;
+    color: #0077cc;
+  }
+  
+  /* Responsive grid for project cards */
+  .project-category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .project-card p {
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+  }
+  
+  /* Reusable small buttons */
+  .small-btn {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    color: white;
+    background-color: #0077cc;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .small-btn:hover {
+    background-color: #005fa3;
+  }
