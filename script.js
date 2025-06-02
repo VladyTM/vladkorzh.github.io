@@ -1,19 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cipqCard = document.querySelector('[data-modal-id="cipq"]');
-    const cipqModal = document.getElementById("modal-cipq");
-    const closeBtn = cipqModal.querySelector(".close-btn");
+    const cards = document.querySelectorAll(".project-card[data-modal-id]");
+    const modals = document.querySelectorAll(".project-modal");
   
-    cipqCard.addEventListener("click", () => {
-      cipqModal.classList.add("active");
-    });
+    cards.forEach(card => {
+      const id = card.getAttribute("data-modal-id");
+      const modal = document.getElementById(`modal-${id}`);
+      const closeBtn = modal.querySelector(".close-btn");
   
-    closeBtn.addEventListener("click", () => {
-      cipqModal.classList.remove("active");
-    });
+      card.addEventListener("click", () => {
+        modal.classList.add("active");
+      });
   
-    cipqModal.addEventListener("click", (e) => {
-      if (e.target === cipqModal) {
-        cipqModal.classList.remove("active");
-      }
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+  
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
     });
   });
