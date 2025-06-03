@@ -393,10 +393,12 @@
 ------------------------------------- */
 
 .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    position: relative;
   }
   
   .menu-toggle {
@@ -411,6 +413,7 @@
     list-style: none;
     display: flex;
     gap: 2rem;
+    justify-content: center;
   }
   
   @media (max-width: 768px) {
