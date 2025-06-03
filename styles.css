@@ -419,6 +419,9 @@
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
     }
   
     .nav-links {
