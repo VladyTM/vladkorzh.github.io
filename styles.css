@@ -420,14 +420,16 @@
     .menu-toggle {
       display: block;
       position: absolute;
-      right: 1rem;
-      top: 1rem;
+      top: 50%;
+      right: 1.5rem;
+      transform: translateY(-50%);
       width: 32px;
       height: 32px;
       background: url('assets/menu-icon.svg') no-repeat center;
       background-size: contain;
       border: 2px solid white;
       border-radius: 4px;
+      z-index: 1001;
     }
   
     .nav-links {
