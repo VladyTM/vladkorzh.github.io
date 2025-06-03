@@ -421,7 +421,7 @@
         display: block;
         position: absolute;
         top: 50%;
-        left: 0.25rem; /* move from right to left */
+        left: 0rem; /* move from right to left */
         transform: translateY(-50%);
         width: 32px;
         height: 32px;
