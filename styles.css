@@ -422,6 +422,12 @@
       position: absolute;
       right: 1rem;
       top: 1rem;
+      width: 32px;
+      height: 32px;
+      background: url('assets/menu-icon.svg') no-repeat center;
+      background-size: contain;
+      border: 2px solid white;
+      border-radius: 4px;
     }
   
     .nav-links {
