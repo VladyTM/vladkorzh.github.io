@@ -387,3 +387,50 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 119, 204, 0.2); /* soft blue shadow */
   }
+
+  /* ------------------------------------
+   Responsive Navigation Menu
+------------------------------------- */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Hide nav links on mobile by default */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    nav ul.nav-links li {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
