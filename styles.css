@@ -422,15 +422,17 @@
     }
   
     .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1rem;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+      }
+      
+      .nav-links.active {
+        max-height: 500px; /* Big enough to hold all links */
+      }
   
     nav ul.nav-links li {
       text-align: center;
