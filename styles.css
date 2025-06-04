@@ -45,7 +45,11 @@
   }
   
   nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #005fa3; /* optional: add a subtle hover effect */
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
   }
   
   .hero {
