@@ -37,7 +37,7 @@
     font-weight: bold;
   }
 
-  nav a.active {
+  nav ul.nav-links li a.active {
     background-color: #0077cc;
     color: white;
     padding: 0.5rem 1rem;
