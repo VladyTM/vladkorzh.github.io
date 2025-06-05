@@ -35,6 +35,9 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 1rem; /* move this here from hover */
+    border-radius: 5px;    /* move this here from hover */
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   nav ul.nav-links li a.active {
@@ -45,11 +48,9 @@
   }
   
   nav a:hover {
-    text-decoration: none;
-    background-color: #005fa3; /* optional: add a subtle hover effect */
+    background-color: #005fa3;
     color: white;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
+    text-decoration: none; /* optional: override underline on hover */
   }
   
   .hero {
