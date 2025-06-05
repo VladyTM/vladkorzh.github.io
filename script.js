@@ -55,4 +55,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Dropdown toggle for Projects tab
+const dropdownBtn = document.querySelector(".dropbtn");
+const dropdown = document.querySelector(".dropdown");
+
+if (dropdownBtn && dropdown) {
+  dropdownBtn.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent navigation
+    dropdown.classList.toggle("show");
+  });
+}
+
+document.addEventListener("click", function (event) {
+  const dropdown = document.querySelector(".dropdown");
+  if (!dropdown) return;
+  
+  const isClickInside = dropdown.contains(event.target);
+  if (!isClickInside) {
+    dropdown.classList.remove("show");
+  }
+});
+
   });

@@ -561,7 +561,7 @@
   background-color: #0077cc;
 }
 
-/* Show dropdown on hover (desktop) */
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown.show .dropdown-content {
+  display: flex;
+  flex-direction: column;
 }
